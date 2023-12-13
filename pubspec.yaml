@@ -1,8 +1,10 @@
-name: device_es
-description: "Device package."
-version: 0.0.1
-author: Moon seunghun
-homepage: https://github.com/Moonseunghun/Devide_Mobil
+
+name: device_pub_ui
+description: "Device make ui"
+version: 1.0.0
+homepage: https://github.com/Moonseunghun
+repository: https://github.com/Moonseunghun/Devide_Mobil
+
 
 environment:
   sdk: '>=3.3.0-210.0.dev <4.0.0'
@@ -16,6 +18,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
