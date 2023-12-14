@@ -1,4 +1,5 @@
-import '../shared/shared_file.dart'; // 올바른 상대 경로 사용
+
+import '../shared/shared_file.dart';
 
 class MobileCode {
   String getMobilePlatformInfo() {

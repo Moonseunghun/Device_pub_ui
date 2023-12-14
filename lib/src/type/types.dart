@@ -11,3 +11,11 @@ enum DeviceNetworkStatus {
   /// The device has never been seen on the network
   unknown
 }
+
+enum DeviceType {
+  mobile,
+  ipad,
+  smallScreenLaptop,
+  largeScreenDesktop,
+  extraLargeTV,
+}
