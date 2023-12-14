@@ -1,4 +1,5 @@
 // device_es.dart 파일
+import 'package:device_pub_ui/src/desktop/desktop_file.dart';
 import 'package:device_pub_ui/src/mobile/mobile_file.dart';
 import 'package:device_pub_ui/src/shared/shared_file.dart';
 import 'package:device_pub_ui/src/type/types.dart';
@@ -10,7 +11,10 @@ class DeviceInfo {
     String getPlatformInfo() {
       SharedCode sharedCode = SharedCode();
       MobileCode mobileCode = MobileCode();
+      DesktopCode desktopCode = DesktopCode();
       switch (this) {
+        case DeviceType.largeScreenDesktop:
+          return desktopCode.getDesktopPlatformInfo();
         case DeviceType.mobile:
           return mobileCode.getMobilePlatformInfo();
         default:
@@ -23,8 +27,11 @@ class DeviceInfo {
     String getPlatformInfo() {
       SharedCode sharedCode = SharedCode();
       MobileCode mobileCode = MobileCode();
+      DesktopCode desktopCode = DesktopCode();
 
       switch (this) {
+        case DeviceType.largeScreenDesktop:
+          return desktopCode.getDesktopPlatformInfo();
         case DeviceType.mobile:
           return mobileCode.getMobilePlatformInfo();
         default:
@@ -43,8 +50,12 @@ extension DeviceTypeExtension on DeviceType {
   String getPlatformInfo() {
     SharedCode sharedCode = SharedCode();
     MobileCode mobileCode = MobileCode();
+    DesktopCode desktopCode = DesktopCode();
+
 
     switch (this) {
+      case DeviceType.largeScreenDesktop:
+        return desktopCode.getDesktopPlatformInfo();
       case DeviceType.mobile:
         return mobileCode.getMobilePlatformInfo();
       default:
